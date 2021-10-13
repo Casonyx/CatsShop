@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+
+.navbar {
+  &__link {
+    text-decoration: none;
+    font-family: $font-primary;
+    color: $cl-secondary;
+    font-weight: 400;
+    transition: color .3s;
+
+    &:hover {
+      color: $cl-btn;
+    }
+    
+    &:not(:last-child) {
+      margin-right: 54px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

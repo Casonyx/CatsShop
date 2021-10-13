@@ -1,0 +1,162 @@
+@import './variables.scss';
+
+
+.header {
+  background: no-repeat url(../images/header/background.png);
+  background-size: cover;
+  background-position-x: center;
+  min-height: 252px;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+  }
+
+  &__logo {
+    z-index: 3;
+  }
+
+  &__mobile {
+    display: flex;
+    flex-direction: column;
+
+    &-num {
+      margin: 0;
+      color: $cl-secondary;
+      font-family: $font-primary;
+      font-size: 24px;
+      font-weight: 700;
+      align-self: flex-end;
+    }
+
+    &-text {
+      margin: 3px 0 0;
+      color: $cl-secondary;
+      font-family: $font-primary;
+      font-weight: 400;
+      align-self: flex-end;
+    }
+  }
+
+  &__count-cats {
+    color: $cl-secondary;
+    font-family: $font-primary;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 36px;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__burger-menu {
+    transition: top .4s;
+    position: absolute;
+    width: 100%;
+    top: -100vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(5, 5, 10, 0.96);
+    z-index: 1;
+  }
+
+  &__burger-mobile {
+    font-family: $font-primary;
+    color: $cl-secondary;
+    font-weight: 400;
+    margin: 20px;
+  }
+
+  &__burger-text {
+    font-family: $font-primary;
+    color: $cl-secondary;
+    font-weight: 400;
+    margin: 0 0 12px;
+  }
+
+  &__link-burger {
+    text-decoration: none;
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 18px;
+    color: $cl-secondary;
+    transition: color .3s;
+    margin-bottom: 20px;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+
+    &:hover {
+      color: #43ABF0;
+    }
+  }
+
+  &__burger {
+    display: none;
+    position: relative;
+    width: 36px;
+    height: 16px;
+    z-index: 3;
+
+    &::before {
+      content: '';
+      background-color: $cl-secondary;
+      position: absolute;
+      width: 43px;
+      height: 4px;
+      left: -6px;
+      top: 2px;
+    }
+
+    &::after {
+      content: '';
+      background-color: $cl-secondary;
+      position: absolute;
+      width: 34px;
+      height: 4px;
+      left: 2px;
+      bottom: 0;  
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;                     
+
+    &__link {
+      &:not(:last-child) {
+        margin-right: 34px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;                     
+
+    &__mobile {
+      display: none;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    &__active {
+      transition: top .4s;
+      top: 0;
+    }
+
+    &__count-cats {
+      font-size: 16px;                        
+      max-width: 90px;
+    }
+  }
+}

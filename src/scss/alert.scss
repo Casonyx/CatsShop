@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+.alert {
+  background: #6ebbd3;
+  min-width: 242px;
+  position: fixed;
+  padding: 20px;
+  transition: transform 1s ease;
+  top: 90%;
+  right: 0;
+  border-radius: 10px 0 0 10px;
+  z-index: 4;
+  border-left: 5px solid darken($cl-btn, 10%);
+  transform: translateX(100%);
+  font-family: $font-primary;
+  color: $cl-primary;
+  font-weight: 700;
+}
+
+.show {
+  transform: translateX(0%);
+}

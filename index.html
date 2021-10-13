@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="description" content="The best cats">
+	<meta name="keywords" content="HTML, cats, orders">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="dist/style.css">
+	<script src="dist/bundle.js" type="text/javascript"></script>
+	<title>Cute cats!</title>
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__content">
+				<img class="header__logo" src="./src/images/header/logo.svg" alt="Logo">
+				<nav class="navbar">
+					<a href="#" class="navbar__link">Main</a>
+					<a href="#" class="navbar__link">Gallery</a>
+					<a href="#" class="navbar__link">News</a>
+					<a href="#" class="navbar__link">Profile</a>
+				</nav>
+				<div class="header__mobile">
+					<p class="header__mobile-num">+544 3490 00000</p>
+					<p class="header__mobile-text">Звони скорее!</p>
+				</div>
+				<div class="header__burger" id="burger">
+					<span class="header__burger-span"></span>
+				</div>
+				<div class="header__burger-menu" id="burger-menu">
+					<a href="#" class="header__link-burger">Main</a>
+					<a href="#" class="header__link-burger">Gallery</a>
+					<a href="#" class="header__link-burger">News</a>
+					<a href="#" class="header__link-burger">Profile</a>
+					<p class="header__burger-mobile">+544 3490 00000</p>
+					<p class="header__burger-text">Звони скорее!</p>
+				</div>
+			</div>
+			<p class="header__count-cats">
+				Найдено 349 котов
+			</p>
+		</div>
+	</header>
+	<div class="m-hero">
+		<div class="container">
+			<div class="m-hero__sort">
+				<p class="m-hero__sort-by">Сортировать по: 
+					<span class="m-hero__sort-price">Цене</span>
+					<span class="m-hero__sort-age">Возрасту</span>
+				</p>
+			</div>
+			<div class="m-hero__content">
+				<div class="card">
+					<div class="card__img-wrap">
+						<img src="./src/images/m-hero/like.svg" alt="Icon" class="card__like">
+						<img class="card__img" src="./src/images/m-hero/cat1.png" alt="Cat">
+						<span class="card__discount">-40%</span>
+					</div>
+					<div class="card__body-wrap">
+						<h4 class="card__title">Кот полосатый</h4>
+						<div class="card__about">
+							<span class="card__color">Коричневый окрас</span>
+							<div class="card__text-wrap">
+								<p class="card__text-b">2 мес.</p>
+								<p class="card__text">Возраст</p>
+							</div>
+							<div>
+								<p class="card__text-b">4</p>
+								<p class="card__text">Кол-во лап</p>
+							</div>
+						</div>
+						<p class="card__price">30 000руб.</p>
+					</div>
+					<button class="card__btn">Купить</button>
+				</div>
+				<div class="card">
+					<div class="card__img-wrap">
+						<img src="./src/images/m-hero/like.svg" alt="Icon" class="card__like">
+						<img class="card__img" src="./src/images/m-hero/cat2.png" alt="Cat">
+					</div>
+					<div class="card__body-wrap">
+						<h4 class="card__title">Кот полосатый</h4>
+						<div class="card__about">
+							<span class="card__color">Коричневый окрас</span>
+							<div class="card__text-wrap">
+								<p class="card__text-b">2 мес.</p>
+								<p class="card__text">Возраст</p>
+							</div>
+							<div>
+								<p class="card__text-b">4</p>
+								<p class="card__text">Кол-во лап</p>
+							</div>
+						</div>
+						<p class="card__price">40 000руб.</p>
+					</div>
+					<button disabled class="card__btn card__sold">Продан</button>
+				</div>
+				<div class="card">
+					<div class="card__img-wrap">
+						<img src="./src/images/m-hero/like.svg" alt="Icon" class="card__like">
+						<img class="card__img" src="./src/images/m-hero/cat3.png" alt="Cat">
+					</div>
+					<div class="card__body-wrap">
+						<h4 class="card__title">Кот полосатый</h4>
+						<div class="card__about">
+							<span class="card__color">Коричневый окрас</span>
+							<div class="card__text-wrap">
+								<p class="card__text-b">2 мес.</p>
+								<p class="card__text">Возраст</p>
+							</div>
+							<div>
+								<p class="card__text-b">4</p>
+								<p class="card__text">Кол-во лап</p>
+							</div>
+						</div>
+						<p class="card__price">20 000руб.</p>
+					</div>
+					<button class="card__btn">Купить</button>
+				</div>
+				<div class="card">
+					<div class="card__img-wrap">
+						<img src="./src/images/m-hero/like.svg" alt="Icon" class="card__like">
+						<img class="card__img" src="./src/images/m-hero/cat1.png" alt="Cat">
+					</div>
+					<div class="card__body-wrap">
+						<h4 class="card__title">Кот полосатый</h4>
+						<div class="card__about">
+							<span class="card__color">Коричневый окрас</span>
+							<div class="card__text-wrap">
+								<p class="card__text-b">2 мес.</p>
+								<p class="card__text">Возраст</p>
+							</div>
+							<div>
+								<p class="card__text-b">4</p>
+								<p class="card__text">Кол-во лап</p>
+							</div>
+						</div>
+						<p class="card__price">25 000руб.</p>
+					</div>
+					<button class="card__btn">Купить</button>
+				</div>
+				<div class="card">
+					<div class="card__img-wrap">
+						<img src="./src/images/m-hero/like.svg" alt="Icon" class="card__like">
+						<img class="card__img" src="./src/images/m-hero/cat3.png" alt="Cat">
+						<span class="card__discount">-40%</span>
+					</div>
+					<div class="card__body-wrap">
+						<h4 class="card__title">Кот полосатый</h4>
+						<div class="card__about">
+							<span class="card__color">Коричневый окрас</span>
+							<div class="card__text-wrap">
+								<p class="card__text-b">2 мес.</p>
+								<p class="card__text">Возраст</p>
+							</div>
+							<div>
+								<p class="card__text-b">4</p>
+								<p class="card__text">Кол-во лап</p>
+							</div>
+						</div>
+						<p class="card__price">30 000руб.</p>
+					</div>
+					<button class="card__btn">Купить</button>
+				</div>
+				<div class="card">
+					<div class="card__img-wrap">
+						<img src="./src/images/m-hero/like.svg" alt="Icon" class="card__like">
+						<img class="card__img" src="./src/images/m-hero/cat2.png" alt="Cat">
+					</div>
+					<div class="card__body-wrap">
+						<h4 class="card__title">Кот полосатый</h4>
+						<div class="card__about">
+							<span class="card__color">Коричневый окрас</span>
+							<div class="card__text-wrap">
+								<p class="card__text-b">2 мес.</p>
+								<p class="card__text">Возраст</p>
+							</div>
+							<div>
+								<p class="card__text-b">4</p>
+								<p class="card__text">Кол-во лап</p>
+							</div>
+						</div>
+						<p class="card__price">10 000руб.</p>
+					</div>
+					<button disabled class="card__btn card__sold">Продан</button>
+				</div>
+				<button disabled class="m-hero__btn-more">Показать еще 20</button>
+				<a href="#header" class="m-hero__scroll anchor">
+					<img src="./src/images/m-hero/arrowUp.svg" alt="scroll">
+				</a>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<div class="footer__followUs">
+					<h2 class="footer__title">Успей купить!</h2>
+					<p class="footer__text">Подпишись и успей словить все акции</p>
+				</div>
+				<div class="footer__form">
+					<div class="footer__inputs">
+						<label class="footer__custom-input">
+							<span class="footer__custom-span" id="footer-span"></span>
+							<input 
+								id="email" 
+								class="footer__input" 
+								placeholder="Email" 
+								name="email" 
+								type="email" 
+							>
+						</label>
+						<button class="footer__btn">Подписаться</button>
+					</div>
+					<label class="footer__check">  
+						<input type="checkbox" class="footer__check-input"> 
+						<div class="footer__checkbox">
+							<img class="footer__checksvg" src="./src/images/footer/checkMark.svg" alt="icon">
+						</div> 
+						Подписаться на новости
+					<label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="alert" id="alert">
+		<span class="alert__text"></span>
+	</div>
+</body>
+</html>

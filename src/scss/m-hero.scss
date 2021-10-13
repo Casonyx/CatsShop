@@ -1,0 +1,132 @@
+@import './variables.scss';
+
+
+.m-hero {
+  padding: 18px 0 25px;
+
+  &__sort-by {
+    margin: 16px 0 36px;
+    font-family: $font-primary;
+    color: $cl-primary;
+    font-weight: 700;
+  }
+
+  &__sort-price {
+    font-weight: 400;
+    margin: 0 75px 0 48px;
+    cursor: pointer;
+    position: relative;
+    transition: color .3s;
+
+    &::after {
+      content: url('../images/m-hero/arrow.svg');
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-left: 14px;
+      position: absolute;
+      top: 4px;
+    }
+
+    &:hover {
+      color: $cl-btn;
+    }
+  }
+
+  &__sort-age {
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    transition: color .3s;
+
+    &::after {
+      content: url('../images/m-hero/arrow.svg');
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-left: 14px;
+      position: absolute;
+      top: em(4 , $fz-base);
+    }
+
+    &:hover {
+      color: $cl-btn;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
+
+  
+  &__btn-more {
+    font-family: $font-primary;
+    color: $cl-primary;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #CACACA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: $cl-secondary;
+    min-width: 380px;
+    min-height: 65px;
+    justify-self: center;
+    margin: 48px auto;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: darken(#CACACA, 1%);
+    }
+  }
+
+  &__scroll {
+    width: 59px;
+    height: 59px;
+    background-color: $cl-btn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: darken($cl-btn, 10%);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__btn-more {
+      margin-bottom: 80px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 12px;                 
+    
+    &__sort-price {
+      margin: 0 34px;
+
+      &::after {
+        margin-left: 10px;
+      }
+    }
+
+    &__sort-age {
+      &::after {
+        margin-left: 10px;
+      }
+    }
+
+    &__btn-more {
+      min-width: 280px;
+      min-height: 50px;
+    }
+  }
+}

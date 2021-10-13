@@ -1,0 +1,167 @@
+@import './variables.scss';
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 380px;
+
+  &__img-wrap {
+    margin-bottom: 29px;
+    position: relative;
+  }
+  
+  &__img {
+    width: 100%;
+  }
+
+  &__body-wrap {
+    margin: 0 30px;
+  }
+
+  &__title {
+    font-family: $font-primary;
+    font-size: 24px;
+    color: $cl-primary;
+    font-weight: 700;
+    margin: 0 0 24px;
+  }
+
+  &__about {
+    display: flex;
+    margin-bottom: 22px;
+    justify-content: space-around;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: $font-primary;
+    font-size: 12px;
+    color: $cl-primary;
+    font-weight: 400;
+
+    &-b {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0;
+      font-family: $font-primary;
+      color: $cl-primary; 
+    }
+
+    &-wrap {
+      width: 25%;
+    }
+  }
+
+  &__color {
+    font-family: $font-primary;
+    font-size: 12px;
+    color: $cl-primary;
+    font-weight: 400;
+    width: 25%;
+    position: relative;
+    line-height: 15px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 26px;
+      position: absolute;
+      background-color: $cl-btn;
+      top: 0; 
+      left: -18px;
+    }
+  }    
+
+  &__price {
+    margin: 0;
+    font-family: $font-primary;
+    font-size: 24px;
+    color: $cl-primary;
+    font-weight: 700;
+    margin: 0 0 29px;
+  }
+
+  &__btn {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 16px;
+    min-width: 380px; 
+    min-height: 65px; 
+    color: $cl-secondary;
+    background: $cl-btn;
+    box-sizing: border-box;
+    border: 1px solid $cl-btn;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: darken($cl-btn, 10%);
+    }    
+  }
+
+  &__sold {
+    background-color: #1F2021;
+    border: 1px solid #1F2021;
+    transition: background-color .3s;
+    cursor: unset;
+
+    &:hover {
+      background-color: darken(#1F2021, 10%);
+    }  
+  }
+
+  &__like {
+    position: absolute;
+    left: 302px;
+    top: 34px;
+    cursor: pointer;
+  }
+
+  &__discount {
+    font-size: 16px;
+    background: #E62D2D;
+    border-radius: 10px;
+    color: $cl-secondary;
+    font-family: $font-primary;
+    position: absolute;
+    left: 38px;
+    top: 34px;
+    min-width: 78px;
+    min-height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__body-wrap {
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    max-width: 280px;
+
+    &__btn {
+      min-width: 280px;
+      min-height: 50px;
+    }
+
+    &__color {
+      &::before {
+        left: -12px;
+      }
+    }
+
+    &__discount {
+      left: 20px;
+    }
+
+    &__like {
+      left: 215px;
+    }
+  }
+}

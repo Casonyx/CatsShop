@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+::placeholder {
+  color: $cl-primary;
+  font-size: 14px;
+  font-family: $font-primary;
+  font-weight: 400;
+}
